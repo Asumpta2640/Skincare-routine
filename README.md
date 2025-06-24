@@ -17,3 +17,8 @@ and helpful tips.
   -JavaScript DOM and event handling
   -Front-end UL design
 
+
+##What is the Benefit for the Users?
+-Minimalistic UL makes it easly for users to navigate and understand the recommended routines.
+-Developers can learn how web apps interact with APIs and how to dynamically update the DOM.
+-Quickly get a beginner-friendly skincare routine thaat fits your skin type.
