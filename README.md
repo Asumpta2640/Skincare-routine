@@ -8,3 +8,12 @@ A web application that allow users to discover personalized daily skin routine b
 -Based on the selection ,a customized skincare routine is dynamicall display on the page,including step-by-step guidance
 and helpful tips.
 -User can reset their selection, try another skin type,or view update tips without refreshing the page.
+
+
+##Who are the users?
+-General Users looking for a simple skincare routine personalized to their skin type.
+-Ideal for students and self-learnerswho want a practical project to understand:
+  -Local JSON API usage
+  -JavaScript DOM and event handling
+  -Front-end UL design
+
