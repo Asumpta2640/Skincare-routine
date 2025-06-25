@@ -34,7 +34,13 @@ p{
 }
 
 #skinTypeList {
-    
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 0;
 }
 
 #skinTypeList li a {
@@ -63,7 +69,7 @@ button#generateBtn{
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.ws ease;
+    transition: background-color 0.3s ease;
 }
 button#generateBtn:disabled {
     background-color: #9e9e9e;
