@@ -15,7 +15,7 @@ body{
 }
 h1{
     text-align: center;
-    color: ;
+    color:aqua;
     margin-bottom: 20px;
 }
 img{
@@ -43,3 +43,8 @@ p{
     transition: all 0.3s ease;
     background-color: #fafafa;
 }
+#skinTypeList li a:hover,
+#skinTypeList li a:focus{
+    background-color: #e0f7fa;
+
+}                      
