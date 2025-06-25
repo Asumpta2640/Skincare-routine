@@ -46,5 +46,22 @@ p{
 #skinTypeList li a:hover,
 #skinTypeList li a:focus{
     background-color: #e0f7fa;
-
-}                      
+    border-color: #e0f7fa;
+    color: #4CAF50;
+}
+button#generateBtn{
+    display: block;
+    margin: 0 auto 20px;
+    padding: 12px 24px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.ws ease;
+}
+button#generateBtn:disabled {
+    background-color: #9e9e9e;
+    cursor: not-allowed;
+}
