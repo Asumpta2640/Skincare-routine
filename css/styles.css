@@ -33,6 +33,10 @@ p{
     margin-bottom: 10px;
 }
 
+#skinTypeList {
+    
+}
+
 #skinTypeList li a {
     text-decoration: none;
     font-size: 1.1em;
@@ -64,4 +68,30 @@ button#generateBtn{
 button#generateBtn:disabled {
     background-color: #9e9e9e;
     cursor: not-allowed;
+}
+button#generatedBtn:hover:not(:disabled){
+    background-color: #388E3C;
+}
+#routineContainer, #tipContainer {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#routineContainer h2,
+#tipContainer h2{
+    margin-bottom: 10px;
+    color: #333;
+}
+@media (max-width:600px){
+    #skinTypeList{
+        flex-direction: column;
+        align-items: center;
+    }
+    #skinTypeList li {
+        width: 100%;
+        text-align: center;
+    }
 }
