@@ -13,5 +13,11 @@ const routines = {
         "Use a clay mask once a week",
         "Finish with sunscreen"
     ],
-    
+    dry:[
+        "Use a hydrating cream cleanser",
+        "Use a hydrating toner with glycerin",
+        "Hyaluronic acid serum is a must",
+        "Rich moisturizing cream",
+        "Moisturizing sunscreen with SPF properties",
+    ]
 }
