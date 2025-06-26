@@ -2,8 +2,8 @@
     "skinType": [
         {
             "id":"oily",
-            "name":"oily"
-            "emoji":"🧴"
+            "name":"oily",
+            "emoji":"🧴",
             "routine": [
                 "Cleanse with a foaming or gel-based cleaners",
                 "Use a salicylic acid toner",
@@ -17,5 +17,23 @@
                 "Avoid heavy creams and oils."
             ]
         },
+        {
+            "id":"dry",
+            "name":"Dry",
+            "emoji":"💧",
+            "routine":[
+                "Use a hydrating cream cleanser",
+                "Use a hydrating toner with glycerin",
+                "Hyaluronic acid serum is a must",
+                "Rich moisturizing cream",
+                "Moisturizing sunscreen with SPF properties",
+            ],
+            "tips":[
+                "Drink plenty of water.",
+                "Avoid hot water;use lukewarm water for cleansing.",
+                "Use a humidifier to add moisture to the air."
+            ]
+        },
+        {}
     ]
 }
