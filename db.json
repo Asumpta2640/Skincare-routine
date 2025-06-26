@@ -1,0 +1,21 @@
+{
+    "skinType": [
+        {
+            "id":"oily",
+            "name":"oily"
+            "emoji":"🧴"
+            "routine": [
+                "Cleanse with a foaming or gel-based cleaners",
+                "Use a salicylic acid toner",
+                "Apply an oil-free moisturizer",
+                "Use a clay mask once a week",
+                "Finish with sunscreen"
+            ],
+            "tips":[
+                "Avoid over-washing your face - twice a day is enough.",
+                "Blotting papers can help control shine during the day.",
+                "Avoid heavy creams and oils."
+            ]
+        },
+    ]
+}
