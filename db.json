@@ -55,7 +55,18 @@
             "id":"sensitive",
             "name":"Sensitive",
             "emoji":"🌸",
-            "routine"
+            "routine":[
+                "Cleanse with a fragrance-free",
+                "Apply a soothing serum",
+                "Use a barrier-repair moisturizer",
+                "Avoid physical touch on your face",
+                "Use SPF for your skin"
+            ],
+            "tips":[
+                "Avoid alcohol and fragrance in skincare.",
+                "Keep your routine minimal to avoid irritation.",
+                "Always patch test new products before full use."
+            ]
         }
     ]
 }
