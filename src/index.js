@@ -18,6 +18,15 @@ const routines = {
         "Use a hydrating toner with glycerin",
         "Hyaluronic acid serum is a must",
         "Rich moisturizing cream",
-        "Moisturizing sunscreen with SPF properties",
-    ]
+        "Moisturizing sunscreen with SPF properties"
+    ],
+    combination[
+        "Use Gel cleanser for balanced skin",
+        "Apply balancing toner ",
+        "Use vitamin C in the morning",
+        "Light moisturizer on T-zone,richer on dry areas",
+        "Apply SPF broad spectrum "
+
+    ],
+    
 }
