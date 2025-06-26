@@ -51,5 +51,11 @@
                 "Don't use harsh products that dry out dry areas in your face.",
             ]
         },
+        {
+            "id":"sensitive",
+            "name":"Sensitive",
+            "emoji":"🌸",
+            "routine"
+        }
     ]
 }
