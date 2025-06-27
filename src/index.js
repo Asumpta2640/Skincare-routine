@@ -54,3 +54,20 @@ const tips = {
               "Always patch test new products before full use."
 };
 
+skinTypeList.addEventListener("click", (event) => {
+    if (event.target.tagName === "A") {
+        event.preventDefault();
+
+        const href = event.target.getAttribute("href").substring(1); // get "oily", "dry", etc.
+        selectedSkinType = href;
+        generateBtn.disabled = false;
+
+        // Optional: Clear previous routine/tip when changing selection
+        routineContainer.innerHTML = "";
+        tipContainer.innerHTML = "";
+
+        // Highlight selected item
+        document.querySelectorAll("#skinTypeList a").forEach(a => a.classList.remove("selected"));
+        event.target.classList.add("selected");
+    }
+});
