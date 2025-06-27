@@ -20,7 +20,7 @@ const routines = {
         "Rich moisturizing cream",
         "Moisturizing sunscreen with SPF properties"
     ],
-    combination[
+    combination:[
         "Use Gel cleanser for balanced skin",
         "Apply balancing toner ",
         "Use vitamin C in the morning",
@@ -38,7 +38,7 @@ const routines = {
 };
 const tips = {
     oily:[
-        "Avoid over-washing your face - twice a day is enough.",
+        "Avoid over-washing your face washing twice a day is enough.",
          "Blotting papers can help control shine during the day.",
          "Avoid heavy creams and oils."
 
@@ -70,11 +70,9 @@ skinTypeList.addEventListener("click", (event) => {
         selectedSkinType = href;
         generateBtn.disabled = false;
 
-        // Optional: Clear previous routine/tip when changing selection
         routineContainer.innerHTML = "";
         tipContainer.innerHTML = "";
 
-        // Highlight selected item
         document.querySelectorAll("#skinTypeList a").forEach(a => a.classList.remove("selected"));
         event.target.classList.add("selected");
     }
