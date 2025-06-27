@@ -44,6 +44,13 @@ const tips = {
     dry:"Drink plenty of water.",
         "Avoid hot water;use lukewarm water for cleansing.",
         "Use a humidifier to add moisture to the air.",
-        
-    
-}
+
+    combination:"Customize your routine for different parts of your face.",
+                "Multi-masking helps address different areas of your face.",
+                "Don't use harsh products that dry out dry areas in your face.",
+
+    sensitive:"Avoid alcohol and fragrance in skincare.",
+              "Keep your routine minimal to avoid irritation.",
+              "Always patch test new products before full use."
+};
+
