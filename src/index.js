@@ -28,5 +28,22 @@ const routines = {
         "Apply SPF broad spectrum "
 
     ],
+    sensitive: [
+        "Cleanse with a fragrance-free",
+        "Apply a soothing serum",
+        "Use a barrier-repair moisturizer",
+        "Avoid physical touch on your face",
+        "Use SPF for your skin"
+    ]
+};
+const tips = {
+    oily:"Avoid over-washing your face - twice a day is enough.",
+         "Blotting papers can help control shine during the day.",
+         "Avoid heavy creams and oils.",
+
+    dry:"Drink plenty of water.",
+        "Avoid hot water;use lukewarm water for cleansing.",
+        "Use a humidifier to add moisture to the air.",
+        
     
 }
