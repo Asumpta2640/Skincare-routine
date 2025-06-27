@@ -2,7 +2,7 @@
 A web application that allow users to discover personalized daily skin routine based on their skin type
 
 ---
-##How does it works?
+## How does it works?
 
 -The Users selects their skin type through the app interface.
 -The app fetchs data from a local JSON server(db.json),which contains skincare routines and tips categorized by skin type.
@@ -11,7 +11,7 @@ and helpful tips.
 -User can reset their selection, try another skin type,or view update tips without refreshing the page.
 
 
-##Who are the users?
+## Who are the users?
 
 -General Users looking for a simple skincare routine personalized to their skin type.
 -Ideal for students and self-learnerswho want a practical project to understand:
@@ -20,13 +20,13 @@ and helpful tips.
   -Front-end UL design
 
 ---
-##What is the Benefit for the Users?
+## What is the Benefit for the Users?
 
 -Minimalistic UL makes it easly for users to navigate and understand the recommended routines.
 -Developers can learn how web apps interact with APIs and how to dynamically update the DOM.
 -Quickly get a beginner-friendly skincare routine thaat fits your skin type.
 ---
-##What is the goal of this project?
+## What is the goal of this project?
 
 -To demonstrate key web development concepts in a approachable way.By building this project, users will:
   -Gain experience structuring a basic front-end project
@@ -41,7 +41,27 @@ and helpful tips.
   -JavaScript
   -JSON Server
 
+## Setup Instructions
+
+1**Clone the repository**:
+   ```bash
+   git clone https://git@github.com:Asumpta2640/Skincare-routine.git
+   cd Skincare-routine
+
+2**install JSON Server**
+  ```bash  
+  npm install -g json-server
+
+3**Start the JSON Server**
+ ```bash
+ json-server --watch db.json
+
+4**Start the live Server for HTML**
+ -Using the VS Code's Live Server 
+
 This project was developed by Jelagat Asumpta email:sugutasumpta@gmail.comAdd commentMore actions
+
+---
 
 #License
 This project is licensed under the [MIT License](LICENSE)
