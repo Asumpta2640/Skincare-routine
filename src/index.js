@@ -37,21 +37,29 @@ const routines = {
     ]
 };
 const tips = {
-    oily:"Avoid over-washing your face - twice a day is enough.",
+    oily:[
+        "Avoid over-washing your face - twice a day is enough.",
          "Blotting papers can help control shine during the day.",
-         "Avoid heavy creams and oils.",
+         "Avoid heavy creams and oils."
 
-    dry:"Drink plenty of water.",
+    ],
+    dry:[
+        "Drink plenty of water.",
         "Avoid hot water;use lukewarm water for cleansing.",
-        "Use a humidifier to add moisture to the air.",
+        "Use a humidifier to add moisture to the air."
+    ],
 
-    combination:"Customize your routine for different parts of your face.",
+    combination:[
+                "Customize your routine for different parts of your face.",
                 "Multi-masking helps address different areas of your face.",
                 "Don't use harsh products that dry out dry areas in your face.",
+    ],
 
-    sensitive:"Avoid alcohol and fragrance in skincare.",
+    sensitive:[
+             "Avoid alcohol and fragrance in skincare.",
               "Keep your routine minimal to avoid irritation.",
               "Always patch test new products before full use."
+]
 };
 
 skinTypeList.addEventListener("click", (event) => {
