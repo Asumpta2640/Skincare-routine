@@ -71,3 +71,16 @@ skinTypeList.addEventListener("click", (event) => {
         event.target.classList.add("selected");
     }
 });
+
+generateBtn.addEventListener("click", () => {
+    if (!selectedSkinType) return;
+
+    const routine = routines[selectedSkinType];
+    const tip = tips[selectedSkinType];
+
+    routineContainer.innerHTML = `<h2>Your ${capitalize(selectedSkinType)} Skin Routine:</h2><ul>` +
+        routine.map(step => `<li>${step}</li>`).join("") +
+        `</ul>`;
+
+    tipContainer.innerHTML = `<h3>Tip:</h3><p>${tip}</p>`;
+});
