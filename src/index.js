@@ -135,12 +135,13 @@ generateBtn.addEventListener("click", () => {
     const tipList = tips[selectedSkinType];
 
     routineContainer.innerHTML = `
-        <h2>${capitalize(selectedSkinType)} Skin Routine</h2>
-        <h3>🌞 Morning Routine</h3>
-        <ul>${morning.map(step => `<li>${step}</li>`).join("")}</ul>
-        <h3>🌙 Evening Routine</h3>
-        <ul>${evening.map(step => `<li>${step}</li>`).join("")}</ul>
-    `;
+    <h2>${capitalize(selectedSkinType)} Skin Routine</h2>
+    <h3>🌞 Morning Routine</h3>
+    <ul>${morningRoutine.map(step => `<li>${step}</li>`).join("")}</ul>
+    <h3>🌙 Night Routine</h3>
+    <ul>${nightRoutine.map(step => `<li>${step}</li>`).join("")}</ul>
+`;
+
 
     tipContainer.innerHTML = `
         <h2>Tips</h2>
