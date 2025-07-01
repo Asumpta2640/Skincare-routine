@@ -3,7 +3,7 @@ const generateBtn = document.getElementById("generateBtn");
 const routineContainer = document.getElementById("routineContainer");
 const tipContainer = document.getElementById("tipContainer");
 
-const skinData = ["oily", "dry", "combination", "sensitive"];
+const skinData = [];
 
 let selectedSkinType = null;
 
