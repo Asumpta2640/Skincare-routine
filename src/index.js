@@ -1,3 +1,15 @@
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM fully loaded");
+
+    skinData.forEach(type => {
+        const a = document.createElement("a");
+        a.href = `#${type}`;
+        a.textContent = capitalize(type);
+        skinTypeList.appendChild(a);
+    });
+
+    generateBtn.disabled = true; 
+});
 const skinTypeList = document.getElementById("skinTypeList");
 const generateBtn = document.getElementById("generateBtn");
 const routineContainer = document.getElementById("routineContainer");
@@ -7,7 +19,6 @@ const skinData = [];
 
 let selectedSkinType = null;
 
-// Populate the skin type list UI with clickable links
 skinData.forEach(type => {
   const a = document.createElement("a");
   a.href = `#${type}`;
@@ -15,7 +26,7 @@ skinData.forEach(type => {
   skinTypeList.appendChild(a);
 });
 
-generateBtn.disabled = true; // disable button until selection
+generateBtn.disabled = true;
 
 skinTypeList.addEventListener("click", (event) => {
     if (event.target.tagName === "A") {
