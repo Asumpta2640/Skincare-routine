@@ -59,9 +59,8 @@ and helpful tips.
 4**Start the live Server for HTML**
  -Using the VS Code's Live Server 
 
-This project was developed by Jelagat Asumpta email:sugutasumpta@gmail.comAdd commentMore actions
 
----
+This project was developed by Jelagat Asumpta email:sugutasumpta@gmail.comAdd commentMore actions
 
 #License
 
