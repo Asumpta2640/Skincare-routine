@@ -33,6 +33,21 @@ and helpful tips.
   -Understand user input handlin and DOM update in JavaScript
   -Learn how to set up and consume a local JSON API
 
+## Setup Instructions
+
+1**Clone the repository**:
+   git clone https://git@github.com:Asumpta2640/Skincare-routine.git
+   cd Skincare-routine
+
+2**install JSON Server** 
+  npm install -g json-server
+
+3**Start the JSON Server**
+ json-server --watch db.json
+
+4**Start the live Server for HTML**
+ -Using the VS Code's Live Server 
+
   ---
   ##Built with
 
@@ -41,24 +56,7 @@ and helpful tips.
   -JavaScript
   -JSON Server
 
-## Setup Instructions
-
-1**Clone the repository**:
-   ```bash
-   git clone https://git@github.com:Asumpta2640/Skincare-routine.git
-   cd Skincare-routine
-
-2**install JSON Server**
-  ```bash  
-  npm install -g json-server
-
-3**Start the JSON Server**
- ```bash
- json-server --watch db.json
-
-4**Start the live Server for HTML**
- -Using the VS Code's Live Server 
-
+ ---
 
 This project was developed by Jelagat Asumpta email:sugutasumpta@gmail.com
 
