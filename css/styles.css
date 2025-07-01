@@ -55,12 +55,12 @@ p{
     background-color: #fafafa;
 }
 #skinTypeList li a:hover,
-#skinTypeList li a:focus{
+#skinTypeList li a:focus {
     background-color: #e0f7fa;
     border-color: #e0f7fa;
     color: #4CAF50;
 }
-button#generateBtn{
+button#generateBtn {
     display: block;
     margin: 0 auto 20px;
     padding: 12px 24px;
@@ -92,6 +92,14 @@ button#generatedBtn:hover:not(:disabled){
     margin-bottom: 10px;
     color: #333;
 }
+
+#morningRoutine, #nightRoutine, #tipsList {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
 @media (max-width:600px){
     #skinTypeList{
         flex-direction: column;
