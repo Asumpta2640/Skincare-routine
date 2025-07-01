@@ -6,13 +6,22 @@ const tipContainer = document.getElementById("tipContainer");
 let selectedSkinType = null;
 
 const routines = {
-    oily:[
-        "Cleanse with a foaming or gel-based cleaners",
-        "Use a salicylic acid toner",
-        "Apply an oil-free moisturizer",
-        "Use a clay mask once a week",
-        "Finish with sunscreen"
-    ],
+    oily:{
+        morningRoutine: [
+          "Cleanse with a foaming or gel-based cleaners",
+          "Use a salicylic acid toner",
+          "Apply an oil-free moisturizer",
+          "Use a clay mask once a week",
+          "Finish with sunscreen"
+       ],
+       nightRoutine:[
+           "Double cleanse if wearing makeup",
+           "Apply a niacinamide serum",
+           "Use a lightweight moisturizer",
+           "Use a clay mask once a week"
+       ]
+    },
+
     dry:[
         "Use a hydrating cream cleanser",
         "Use a hydrating toner with glycerin",
