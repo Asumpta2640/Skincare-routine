@@ -4,6 +4,22 @@ const routineContainer = document.getElementById("routineContainer");
 const tipContainer = document.getElementById("tipContainer");
 
 let selectedSkinType = null;
+let skinData = [];
+
+fetch("http://localhost:3000/skinType")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("Failed to fetch skin types");
+    }
+    return response.json();
+  })
+  .then((data) => {
+    skinData = data;
+  })
+  .catch((error) => {
+    console.error("Error loading skin data:", error);
+  });
+
 
 const routines = {
     oily:{
@@ -115,22 +131,23 @@ skinTypeList.addEventListener("click", (event) => {
 generateBtn.addEventListener("click", () => {
     if (!selectedSkinType) return;
 
-    const routine = routines[selectedSkinType];
-    const tip = tips[selectedSkinType];
+    const { morningRoutine, nightRoutine } = routines[selectedSkinType];
+    const tipList = tips[selectedSkinType];
 
-    routineContainer.innerHTML = 
-    `<h2>Your ${capitalize(selectedSkinType)} Skin Routine</h2>
-     <h3>🌞 Morning Routine</h3>
-     <ul>${routine.morning.map(step => `<li>${step}</li>`).join("")}</ul>
-     <h3>🌙 Night Routine</h3>
-     <ul>${routine.night.map(step => `<li>${step}</li>`).join("")}</ul>`;
- 
-     tipContainer.innerHTML =
-        `<h3>💡 Tips:</h3>
-        <ul>${tip.map(t => `<li>${t}</li>`).join("")}</ul>`;
-       
+    routineContainer.innerHTML = `
+        <h2>${capitalize(selectedSkinType)} Skin Routine</h2>
+        <h3>🌞 Morning Routine</h3>
+        <ul>${morning.map(step => `<li>${step}</li>`).join("")}</ul>
+        <h3>🌙 Evening Routine</h3>
+        <ul>${evening.map(step => `<li>${step}</li>`).join("")}</ul>
+    `;
+
+    tipContainer.innerHTML = `
+        <h2>Tips</h2>
+        <ul>${tipList.map(t => `<li>${t}</li>`).join("")}</ul>
+    `;
 });
 
 function capitalize(str) {
-    return str.charAt(0).toUpperCase() + str.slice(1);
+  return str.charAt(0).toUpperCase() + str.slice(1);
 }
