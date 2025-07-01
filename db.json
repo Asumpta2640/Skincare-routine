@@ -21,12 +21,18 @@
             "id":"dry",
             "name":"Dry",
             "emoji":"💧",
-            "routine":[
+            "morningRoutine":[
                 "Use a hydrating cream cleanser",
                 "Use a hydrating toner with glycerin",
                 "Hyaluronic acid serum is a must",
                 "Rich moisturizing cream",
                 "Moisturizing sunscreen with SPF properties",
+            ],
+            "nightRoutine":[
+                 "Cleanse with a gentle cleanser",
+                 "Apply a nourishing night serum",
+                 "Use a thick night cream or sleeping mask",
+                 "Apply facial oil to lock in moisture"
             ],
             "tips":[
                 "Drink plenty of water.",
@@ -38,12 +44,18 @@
             "id":"combination",
             "name":"Combination",
             "emoji":"🔀",
-            "routine":[
+            "morningRoutine":[
                 "Use Gel cleanser for balanced skin",
                 "Apply balancing toner ",
                 "Use vitamin C in the morning",
                 "Light moisturizer on T-zone,richer on dry areas",
                 "Apply SPF broad spectrum "
+            ],
+            "nightRoutine":[
+              "Cleanse with a gentle foaming cleanser",
+              "Apply a retinol serum (2-3x/week)",
+              "Use a balancing night cream",
+              "Optional: spot treatment on oily areas"  
             ],
             "tips":[
                 "Customize your routine for different parts of your face.",
@@ -55,12 +67,18 @@
             "id":"sensitive",
             "name":"Sensitive",
             "emoji":"🌸",
-            "routine":[
+            "morningRoutine":[
                 "Cleanse with a fragrance-free",
                 "Apply a soothing serum",
                 "Use a barrier-repair moisturizer",
                 "Avoid physical touch on your face",
                 "Use SPF for your skin"
+            ],
+            "nightRoutine":[
+              "Cleanse gently with micellar water or mild cleanser",
+              "Apply a calming serum",
+              "Use a thick barrier-repair night cream",
+              "Avoid physical exfoliants"  
             ],
             "tips":[
                 "Avoid alcohol and fragrance in skincare.",
