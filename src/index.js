@@ -118,11 +118,17 @@ generateBtn.addEventListener("click", () => {
     const routine = routines[selectedSkinType];
     const tip = tips[selectedSkinType];
 
-    routineContainer.innerHTML = `<h2>Your ${capitalize(selectedSkinType)} Skin Routine:</h2><ul>` +
-        routine.map(step => `<li>${step}</li>`).join("") +
-        `</ul>`;
-
-    tipContainer.innerHTML = `<h3>Tip:</h3><p>${tip}</p>`;
+    routineContainer.innerHTML = 
+    `<h2>Your ${capitalize(selectedSkinType)} Skin Routine</h2>
+     <h3>🌞 Morning Routine</h3>
+     <ul>${routine.morning.map(step => `<li>${step}</li>`).join("")}</ul>
+     <h3>🌙 Night Routine</h3>
+     <ul>${routine.night.map(step => `<li>${step}</li>`).join("")}</ul>`;
+ 
+     tipContainer.innerHTML =
+        `<h3>💡 Tips:</h3>
+        <ul>${tip.map(t => `<li>${t}</li>`).join("")}</ul>`;
+       
 });
 
 function capitalize(str) {
