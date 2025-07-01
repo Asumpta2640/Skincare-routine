@@ -38,21 +38,37 @@ const routines = {
         ]
     },    
 
-    combination:[
-        "Use Gel cleanser for balanced skin",
-        "Apply balancing toner ",
-        "Use vitamin C in the morning",
-        "Light moisturizer on T-zone,richer on dry areas",
-        "Apply SPF broad spectrum "
+    combination:{
+        morningRoutine:[
+          "Use Gel cleanser for balanced skin",
+          "Apply balancing toner ",
+          "Use vitamin C in the morning",
+          "Light moisturizer on T-zone,richer on dry areas",
+          "Apply SPF broad spectrum "
 
-    ],
-    sensitive: [
-        "Cleanse with a fragrance-free",
-        "Apply a soothing serum",
-        "Use a barrier-repair moisturizer",
-        "Avoid physical touch on your face",
-        "Use SPF for your skin"
-    ]
+        ],
+        nightRoutine:[
+            "Cleanse with a gentle foaming cleanser",
+            "Apply a retinol serum (2-3x/week)",
+            "Use a balancing night cream",
+            "Optional: spot treatment on oily areas"
+        ]
+    },
+    sensitive: {
+        morningRoutine: [
+           "Cleanse with a fragrance-free",
+           "Apply a soothing serum",
+           "Use a barrier-repair moisturizer",
+           "Avoid physical touch on your face",
+           "Use SPF for your skin"
+        ],
+        nightRoutine: [
+           "Cleanse gently with micellar water or mild cleanser",
+           "Apply a calming serum",
+           "Use a thick barrier-repair night cream",
+           "Avoid physical exfoliants"
+        ]
+    }
 };
 const tips = {
     oily:[
@@ -77,7 +93,7 @@ const tips = {
              "Avoid alcohol and fragrance in skincare.",
               "Keep your routine minimal to avoid irritation.",
               "Always patch test new products before full use."
-]
+    ]
 };
 
 skinTypeList.addEventListener("click", (event) => {
