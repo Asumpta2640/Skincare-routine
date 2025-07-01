@@ -3,23 +3,59 @@ const generateBtn = document.getElementById("generateBtn");
 const routineContainer = document.getElementById("routineContainer");
 const tipContainer = document.getElementById("tipContainer");
 
+const skinData = ["oily", "dry", "combination", "sensitive"];
+
 let selectedSkinType = null;
-let skinData = [];
 
-fetch("http://localhost:3000/skinType")
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error("Failed to fetch skin types");
-    }
-    return response.json();
-  })
-  .then((data) => {
-    skinData = data;
-  })
-  .catch((error) => {
-    console.error("Error loading skin data:", error);
-  });
+// Populate the skin type list UI with clickable links
+skinData.forEach(type => {
+  const a = document.createElement("a");
+  a.href = `#${type}`;
+  a.textContent = capitalize(type);
+  skinTypeList.appendChild(a);
+});
 
+generateBtn.disabled = true; // disable button until selection
+
+skinTypeList.addEventListener("click", (event) => {
+    if (event.target.tagName === "A") {
+        event.preventDefault();
+
+        const href = event.target.getAttribute("href").substring(1); // get "oily", "dry", etc.
+        selectedSkinType = href;
+        generateBtn.disabled = false;
+
+        routineContainer.innerHTML = "";
+        tipContainer.innerHTML = "";
+
+        document.querySelectorAll("#skinTypeList a").forEach(a => a.classList.remove("selected"));
+        event.target.classList.add("selected");
+         }
+});
+
+generateBtn.addEventListener("click", () => {
+    if (!selectedSkinType) return;
+
+    const { morningRoutine, nightRoutine } = routines[selectedSkinType];
+    const tipList = tips[selectedSkinType];
+
+    routineContainer.innerHTML = `
+    <h2>${capitalize(selectedSkinType)} Skin Routine</h2>
+    <h3>🌞 Morning Routine</h3>
+    <ul>${morningRoutine.map(step => `<li>${step}</li>`).join("")}</ul>
+    <h3>🌙 Night Routine</h3>
+    <ul>${nightRoutine.map(step => `<li>${step}</li>`).join("")}</ul>
+`;
+
+    tipContainer.innerHTML = `
+        <h2>Tips</h2>
+        <ul>${tipList.map(t => `<li>${t}</li>`).join("")}</ul>
+    `;
+});
+
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
 
 const routines = {
     oily:{
@@ -112,43 +148,3 @@ const tips = {
     ]
 };
 
-skinTypeList.addEventListener("click", (event) => {
-    if (event.target.tagName === "A") {
-        event.preventDefault();
-
-        const href = event.target.getAttribute("href").substring(1); // get "oily", "dry", etc.
-        selectedSkinType = href;
-        generateBtn.disabled = false;
-
-        routineContainer.innerHTML = "";
-        tipContainer.innerHTML = "";
-
-        document.querySelectorAll("#skinTypeList a").forEach(a => a.classList.remove("selected"));
-        event.target.classList.add("selected");
-    }
-});
-
-generateBtn.addEventListener("click", () => {
-    if (!selectedSkinType) return;
-
-    const { morningRoutine, nightRoutine } = routines[selectedSkinType];
-    const tipList = tips[selectedSkinType];
-
-    routineContainer.innerHTML = `
-    <h2>${capitalize(selectedSkinType)} Skin Routine</h2>
-    <h3>🌞 Morning Routine</h3>
-    <ul>${morningRoutine.map(step => `<li>${step}</li>`).join("")}</ul>
-    <h3>🌙 Night Routine</h3>
-    <ul>${nightRoutine.map(step => `<li>${step}</li>`).join("")}</ul>
-`;
-
-
-    tipContainer.innerHTML = `
-        <h2>Tips</h2>
-        <ul>${tipList.map(t => `<li>${t}</li>`).join("")}</ul>
-    `;
-});
-
-function capitalize(str) {
-  return str.charAt(0).toUpperCase() + str.slice(1);
-}
