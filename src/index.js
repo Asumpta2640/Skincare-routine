@@ -22,13 +22,22 @@ const routines = {
        ]
     },
 
-    dry:[
-        "Use a hydrating cream cleanser",
-        "Use a hydrating toner with glycerin",
-        "Hyaluronic acid serum is a must",
-        "Rich moisturizing cream",
-        "Moisturizing sunscreen with SPF properties"
-    ],
+    dry:{
+        morningRoutine:[
+           "Use a hydrating cream cleanser",
+           "Use a hydrating toner with glycerin",
+           "Hyaluronic acid serum is a must",
+           "Rich moisturizing cream",
+           "Moisturizing sunscreen with SPF properties"
+        ],
+        nightRoutine:[
+            "Cleanse with a gentle cleanser",
+            "Apply a nourishing night serum",
+            "Use a thick night cream or sleeping mask",
+            "Apply facial oil to lock in moisture"
+        ]
+    },    
+
     combination:[
         "Use Gel cleanser for balanced skin",
         "Apply balancing toner ",
